@@ -56,6 +56,7 @@ nav {
 }
 
 nav a:hover {
+  color: lightslategrey;
   text-decoration: none;
 }
 
@@ -84,9 +85,14 @@ nav  li {
   margin: 0;
 }
 
-.navActive {
+/* .navActive {
+  color: black;
+} */
+
+.nav-link active {
   color: black;
 }
+
 .footer {
   background-color: purple;
 }
@@ -100,6 +106,26 @@ nav  li {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 0;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 20px;
+  width: 25%;
+}
+
+.project-titles {
+  color: black;
 }
 
 code {
