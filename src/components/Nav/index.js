@@ -1,11 +1,11 @@
 import React from "react";
-import { capitalizeFirstLetter } from '../../utils/helpers';
+// import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
  const {
-        categories = [],
-        setCurrentCategory,
-        currentCategory,
+        // categories = [],
+        // setCurrentCategory,
+        // currentCategory,
         contactSelected,
         setContactSelected,
         portfolioSelected,
@@ -14,9 +14,9 @@ function Nav(props) {
 
 
 
-  function categorySelected(name) {
-    console.log(`${name} clicked`)
-  }
+//   function categorySelected(name) {
+//     console.log(`${name} clicked`)
+//   }
 
   return (
     <header>

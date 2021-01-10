@@ -87,6 +87,20 @@ nav  li {
 .navActive {
   color: black;
 }
+.footer {
+  background-color: purple;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
