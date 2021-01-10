@@ -1,6 +1,14 @@
 import React from "react";
 
-function Nav() {
+function Nav(props) {
+ const {
+        // categories = [],
+        setCurrentCategory,
+        currentCategory,
+        contactSelected,
+        setContactSelected
+      } = props;
+
   const categories = [
     {
       name: "Portfolio",
@@ -23,7 +31,7 @@ function Nav() {
         <h1 className="title">Victoria Landron</h1>
         <ul className="nav-categories">
           <li className="mx-2">
-            <a href="#about">About Me</a>
+            <a href="#about" onClick={() => setContactSelected(false)}>About Me</a>
           </li>
 
           {categories.map((category) => (
@@ -35,7 +43,7 @@ function Nav() {
           ))}
 
           <li>
-            <span>Contact</span>
+            <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
         </ul>
       </nav>
