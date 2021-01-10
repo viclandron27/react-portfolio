@@ -7,7 +7,9 @@ function Nav(props) {
         setCurrentCategory,
         currentCategory,
         contactSelected,
-        setContactSelected
+        setContactSelected,
+        portfolioSelected,
+        setPortfolioSelected,
       } = props;
 
 
@@ -21,11 +23,20 @@ function Nav(props) {
       <nav>
         <h1 className="title">Victoria Landron</h1>
         <ul className="nav-categories">
-          <li className="mx-2">
+          <li className={`mx-1 ${!contactSelected && 'navActive'}`}>
             <a href="#about" onClick={() => setContactSelected(false)}>About Me</a>
           </li>
+          <li className={`mx-1 ${!contactSelected && 'navActive'}`}>
+              <span href="#portfolio" onClick={() => {
+                  setContactSelected(false);
+                  setPortfolioSelected(true);
+                  }}>Portfolio</span>
+          </li>
+          <li className={`mx-1 ${!contactSelected && portfolioSelected && 'navActive'}`}>
+              <span href="#resume" onClick={() => setContactSelected(false)}>Resume </span>
+          </li>
 
-          {categories.map((category) => (
+          {/* {categories.map((category) => (
             <li className={`mx-1 ${
                 currentCategory.name === category.name && !contactSelected && `navActive`
                 }`} 
@@ -39,10 +50,10 @@ function Nav(props) {
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
-          ))}
+          ))} */}
 
           <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+            <span href="contact" onClick={() => setContactSelected(true)}>Contact</span>
           </li>
         </ul>
       </nav>

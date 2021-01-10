@@ -1,9 +1,9 @@
-// import logo from './logo.svg';
 import React, { useState } from "react";
 import "./App.css";
 import About from "./components/About";
 import ContactForm from "./components/Contact";
 import Nav from "./components/Nav";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const categories = [
@@ -20,6 +20,7 @@ function App() {
   
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   const [contactSelected, setContactSelected] = useState(false);
+  const [portfolioSelected, setPortfolioSelected] = useState(false);
 
   return (
     <div className="App">
@@ -29,8 +30,11 @@ function App() {
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+        portfolioSelected={portfolioSelected}
+        setPortfolioSelected={setPortfolioSelected}
       ></Nav>
       <main>
+
         {!contactSelected ? (
           <>
             <About currentCategory={currentCategory}></About>
@@ -38,6 +42,16 @@ function App() {
         ) : (
           <ContactForm></ContactForm>
         )}
+
+        
+         {/* {!portfolioSelected ? (
+          <>
+            <About currentCategory={currentCategory}></About>
+          </>
+        ) : (
+          <Portfolio></Portfolio>
+        )} */}
+
       </main>
       <footer>footer</footer>
     </div>
