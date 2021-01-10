@@ -1,25 +1,16 @@
 import React from "react";
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
  const {
-        // categories = [],
+        categories = [],
         setCurrentCategory,
         currentCategory,
         contactSelected,
         setContactSelected
       } = props;
 
-  const categories = [
-    {
-      name: "Portfolio",
-      description: "Overview of my different projects",
-    },
-    {
-      name: "Resume",
-      description:
-        "Link to my resume describing all my previous work and experience",
-    },
-  ];
+
 
   function categorySelected(name) {
     console.log(`${name} clicked`)
@@ -35,14 +26,22 @@ function Nav(props) {
           </li>
 
           {categories.map((category) => (
-            <li className="mx-1" key={category.name}>
-              <span onClick={() => categorySelected(category.name)}>
-                  {category.name}
-            </span>
+            <li className={`mx-1 ${
+                currentCategory.name === category.name && !contactSelected && `navActive`
+                }`} 
+                key={category.name}>
+             <span
+                onClick={() => {
+                  setCurrentCategory(category);
+                  setContactSelected(false);;
+                }}
+              >
+                {capitalizeFirstLetter(category.name)}
+              </span>
             </li>
           ))}
 
-          <li>
+          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
         </ul>

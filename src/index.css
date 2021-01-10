@@ -36,9 +36,9 @@ header h1 {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: none;
 }
 
 a:hover {
@@ -85,7 +85,7 @@ nav  li {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: black;
 }
 
 code {
