@@ -40,9 +40,11 @@ function ContactForm() {
 
   return (
     <section>
-      <h1>Contact me</h1>
+      <h1>Contact Me</h1>
+      <h2>Email Address:</h2>
+      <p>viclandron@gmail.com</p>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+        <div className="form-elements">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -51,7 +53,7 @@ function ContactForm() {
             name="name"
           />
         </div>
-        <div>
+        <div className="form-elements">
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
@@ -60,7 +62,7 @@ function ContactForm() {
             name="email"
           />
         </div>
-        <div>
+        <div className="form-elements">
           <label htmlFor="message">Message:</label>
           <textarea
             name="message"

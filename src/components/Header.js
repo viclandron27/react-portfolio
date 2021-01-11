@@ -37,7 +37,9 @@ function Header() {
           />
         </nav>
       </header>
+      <main>
       <div>{renderPage(currentPage)}</div>
+      </main>
     </div>
   );
 }

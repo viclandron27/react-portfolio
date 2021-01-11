@@ -42,7 +42,7 @@ function Project() {
   ];
   return (
     <div>
-      <h1>Portolio</h1>
+      <h1>Portfolio</h1>
       <div className="portfolio">
       {projects.map(project => (
           <div className="projects">

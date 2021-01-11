@@ -9,15 +9,32 @@ body {
 
 main {
   margin: 0 auto;
+  height: 100%;
   padding: 0 20px;
 	max-width: 100%;
   /* padding: 0 0px; */
-  background-color: lightgoldenrodyellow;
+  background-color: #FBF4E1;
+}
+
+h1 {
+  text-align: left;
+  font-size: 40px;
+  padding: 20px 20px 20px 0;
+  margin: 0;
+  color: #7E685A;
+}
+
+h3 {
+  color: #7E685A;
 }
 
 header {
   padding: 0 20px;
-  background-color: purple;
+  background-color: #7E685A;
+  color: white;
+}
+
+header h1 {
   color: white;
 }
 
@@ -33,18 +50,33 @@ header nav ul {
   justify-content: space-evenly;
 }
 
+header nav li {
+  color: white;
+}
+
 header h1 {
   font-size: 30px;
 }
 
-a {
+header a {
   color: white;
+}
+
+a {
+  color: #7E685A;
   text-decoration: none;
   font-weight: none;
 }
 
 a:hover {
   text-decoration: underline;
+  color: black;
+}
+
+p {
+  margin: 0;
+  padding: 0 70px 20px 0;
+  color: #7E685A;
 }
 
 li {
@@ -58,7 +90,8 @@ nav {
 }
 
 nav a:hover {
-  color: lightslategrey;
+  color: black;
+  font-weight: 800;
   text-decoration: none;
 }
 
@@ -69,6 +102,7 @@ nav  li {
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
+  color: white;
 }
 
 .mx-2 {
@@ -98,7 +132,7 @@ nav  li {
 }
 
 .footer {
-  background-color: purple;
+  background-color: #7E685A;
 }
 
 .footer a {
@@ -112,24 +146,55 @@ nav  li {
   margin: 0;
 }
 
+.contact-form {
+  padding-bottom: 50px;
+}
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  color: #7E685A;
+  font-weight: 800px;
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
+  border: solid #7E685A 2px;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
   margin-right: 20px;
   width: 25%;
+  height: fit-content;
 }
 
 .project-titles {
-  color: black;
+  background-color: #7E685A;
+  color: white;
+  font-weight: 800px;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+
+}
+
+.proficiencies {
+  text-decoration:#7E685A;
+  color: #7E685A;
+  font-size: 20px;
+}
+
+.resume {
+  color: #7E685A;
 }
 
 code {

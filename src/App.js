@@ -21,10 +21,8 @@ function App() {
         portfolioSelected={portfolioSelected}
         setPortfolioSelected={setPortfolioSelected}
       ></Nav> */}
-      <main>
         <Header></Header>
-      </main>
-      <Footer></Footer>
+        <Footer></Footer>
     </div>
   );
 }
