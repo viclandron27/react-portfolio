@@ -12,7 +12,7 @@ This portfolio showcases Victoria's professional work, experience and ways to co
 ## Website
 https://viclandron27.github.io/react-portfolio/
 
-![](assets/images/screenshot.png)
+![](Screen Shot 2021-01-10 at 8.15.41 PM.png)
 
 ## Contribution
 Made by Victoria Landron
