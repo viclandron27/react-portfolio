@@ -10,7 +10,7 @@ This portfolio showcases Victoria's professional work, experience and ways to co
 * React
 
 ## Website
-https://viclandron27.github.io/porfolio/
+https://viclandron27.github.io/react-portfolio/
 
 ![](assets/images/screenshot.png)
 
