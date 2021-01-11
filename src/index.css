@@ -8,13 +8,15 @@ body {
 }
 
 main {
-	margin: 0 auto;
+  margin: 0 auto;
+  padding: 0 20px;
 	max-width: 100%;
   /* padding: 0 0px; */
   background-color: lightgoldenrodyellow;
 }
 
 header {
+  padding: 0 20px;
   background-color: purple;
   color: white;
 }
@@ -81,7 +83,9 @@ nav  li {
 }
 
 .about {
-  text-align: center;
+  text-align: left;
+  font-size: 40px;
+  padding: 20px;
   margin: 0;
 }
 
